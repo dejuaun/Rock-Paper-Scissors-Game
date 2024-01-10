@@ -28,13 +28,19 @@ function win(userChoice, compChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
-    result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(compChoice)}. You Win!`;
+    result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(compChoice)}. You Won!`;
 }
-function lose() {
-    compScore;
+function lose(userChoice, compChoice) {
+    compScoreScore++;
+    userScore_span.innerHTML = userScore;
+    compScore_span.innerHTML = compScore;
+    result_p.innerHTML = `${convertToWord(userChoice)} loses ${convertToWord(compChoice)}. You Lost!`;
 }
 function draw() {
-    console.log('draw');
+    userScore++;
+    userScore_span.innerHTML = userScore;
+    compScore_span.innerHTML = compScore;
+    result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(compChoice)}. You Win!`;
 }
 
 //Takes and compares user choice against comp choice and returns the result
