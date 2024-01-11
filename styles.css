@@ -69,6 +69,10 @@ header h1 {
     padding-right: 40px;
 }
 
+.choice p {
+    color: black;
+}
+
 .choice img {
     width: 30%;
 }
@@ -95,5 +99,47 @@ header h1 {
 #action-message {
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
+}
+
+/*Change and comp choice to reflect their scoreboard colors*/
+.colored-text-user {
+    color: #f97ba9;
+    text-shadow: -1px -1px 0 #6a6969,
+        /* Top-left */
+        1px -1px 0 #6a6969,
+        /* Top-right */
+        -1px 1px 0 #6a6969,
+        /* Bottom-left */
+        1px 1px 0 #6a6969;
+    /* Bottom-right */
+    ;
+}
+
+.colored-text-comp {
+    color: #B4B4B4;
+    text-shadow: -1px -1px 0 #6a6969,
+        /* Top-left */
+        1px -1px 0 #6a6969,
+        /* Top-right */
+        -1px 1px 0 #6a6969,
+        /* Bottom-left */
+        1px 1px 0 #6a6969;
+    /* Bottom-right */
+    ;
+}
+
+.green-glow {
+    border: 4px solid #00FF00;
+    box-shadow: 0 0 10px #007500;
+}
+
+.red-glow {
+    border: 4px solid #FF0000;
+    box-shadow: 0 0 10px #750000;
+}
+
+.grey-glow {
+    border: 4px solid #808080;
+    box-shadow: 0 0 10px #3B3B3B;
 }
