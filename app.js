@@ -27,6 +27,7 @@ function convertToWord(letter) {
 }
 
 
+
 //Adds The Functionality For When The User Wins
 function win(userChoice, compChoice) {
     //Change and display the scores
