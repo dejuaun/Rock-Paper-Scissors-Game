@@ -47,7 +47,7 @@ function win(userChoice, compChoice) {
 }
 
 
-//Adds The Functionality For When The User Wins
+//Adds The Functionality For When The User Loses
 function lose(userChoice, compChoice) {
     //Change and display the scores
     compScore++;
@@ -61,13 +61,13 @@ function lose(userChoice, compChoice) {
     //Display who won on screen
     result_p.innerHTML = `${coloredUserChoice} loses to ${coloredCompChoice} <br>You Lost...`;
 
-    //Adds and removes a green glow when the player wins
+    //Adds and removes a red glow when the player loses
     document.getElementById(userChoice).classList.add('red-glow');
     setTimeout(() => document.getElementById(userChoice).classList.remove('red-glow'), 300);
 }
 
 
-//Adds The Functionality For When The User Wins
+//Adds The Functionality For When The User Draws
 function draw(userChoice, compChoice) {
     //Change color of comp and user choice to reflect each respective scoreboard color
     const coloredUserChoice = `<span class="colored-text-user">${convertToWord(userChoice)}</span>`
@@ -76,7 +76,7 @@ function draw(userChoice, compChoice) {
     //Display who won on screen
     result_p.innerHTML = `${coloredUserChoice} and ${coloredCompChoice} <br>It's A Draw!`;
 
-    //Adds and removes a green glow when the player wins
+    //Adds and removes a grey glow when the player draws
     document.getElementById(userChoice).classList.add('grey-glow');
     setTimeout(() => document.getElementById(userChoice).classList.remove('grey-glow'), 300);
 }

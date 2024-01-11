@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
+/* Main styling */
 * {
     margin: 0;
     padding: 0;
@@ -54,6 +55,7 @@ header h1 {
     right: -30px;
 }
 
+/* Result Text */
 .result {
     font-size: 40px;
 }
@@ -63,6 +65,7 @@ header h1 {
     font-weight: bold;
 }
 
+/* Rock, paper, scissors buttons */
 .choices {
     margin: 50px 0;
     text-align: center;
@@ -96,6 +99,7 @@ header h1 {
     background: #e7e5ff;
 }
 
+/* Make your move message */
 #action-message {
     text-align: center;
     font-weight: bold;
@@ -129,6 +133,7 @@ header h1 {
     ;
 }
 
+/* Color around the buttons depending on whether a user wins, loses or draws */
 .green-glow {
     border: 4px solid #00FF00;
     box-shadow: 0 0 10px #007500;
